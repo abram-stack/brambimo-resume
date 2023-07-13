@@ -270,7 +270,7 @@ margin-top: var(--mb-3);
 }
 
 /* EDUCATION */
-.education--content,.experience--content{
+.education--content,.experience--content, .skills--content{
   display: flex;
 }
 .education--time, .experience--time{
@@ -297,17 +297,19 @@ margin-top: var(--mb-3);
 }
 .education--title, .experience--title{
   font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
 }
 .education--studies, .experience--company{
   font-size: var(--small-font-size);
   color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
-.education--year, .experience--description{
+.experience--description{
   font-size: var(--small-font-size);
 }
 
 /* SKILSS */
-.skills--content,.languages--content{
+.skills--content{
   grid-template-columns: repeat(2, 1fr);
 }
 .skills--name{
@@ -344,12 +346,26 @@ margin-top: var(--mb-3);
   font-size: var(--smaller-font-size);
 }
 .references-title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
+}
+.references--description{
+  width: 100%;
+}
+/* experience  */
+.exp--point{
+  margin-bottom: .5rem;
+}
+.experience--time, .education--year {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
 }
 
+.experience--description {
+  font-size: var(--small-font-size);
+}
 /* INTERESTS */
 .interests--container{
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: var(--mb-2);
 }
 
@@ -359,7 +375,7 @@ margin-top: var(--mb-3);
   align-items: center;
 }
 .interests--icon{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--text-color-light);
 }
 
@@ -435,11 +451,11 @@ margin-top: var(--mb-3);
     grid-template-columns: repeat(2, 1fr);
   }
   .languages--content{
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
+    /* grid-template-columns: repeat(2, max-content); */
+    gap: .5rem;
   }
   .interests--container{
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
   }
   .generate-pdf{
@@ -572,3 +588,4 @@ body.scale-cv{
 .scale-cv .interests--container{
   column-gap: 2.5rem;
 }
+
