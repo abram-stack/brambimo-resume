@@ -141,7 +141,7 @@ img {
 @media screen and (max-width: 968px){
  .nav--menu{
   position: fixed;
-  bottom: -100%; /*disappear the menu*/
+  /* bottom: -100%; disappear the menu */
   left: 0;
   width: 100%;
   padding: 2rem 1.5rem;
@@ -219,6 +219,7 @@ img {
 .home--profession{
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
+  color: rgb(20, 55, 116)
 }
 .home--address{
   gap: 1rem;
