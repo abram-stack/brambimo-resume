@@ -11,7 +11,8 @@
   --body-color: #FCFCFC;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Montserrat', sans-serif;
+  /* --body-font: 'Montserrat', sans-serif; */
+  --body-font: 'Open Sans', sans-serif;
   --h1-font-size: 1.5rem;
   /*24px*/
   --h2-font-size: 1.25rem;
@@ -89,21 +90,30 @@ a {
 img {
   max-width: 100%;
 }
-
+.text--blue{
+  color: rgb(20, 55, 116)
+}
 .section {
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 
 .section-title {
   font-size: var(--h2-font-size);
+  font-family: 'IBM Plex Mono', monospace;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: .35rem;
+  letter-spacing: .1rem;
   text-align: center;
   margin-bottom: var(--mb-2);
 }
-
+/* util */
+.spacing-m{
+  padding-bottom: 2rem;
+}
+.spacing-l{
+  padding-bottom: 7rem;
+}
 /* LAYOUT */
 .bd-container{
   max-width: 968px;
@@ -115,7 +125,7 @@ img {
 
 .bd-grid{
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .l-header{
@@ -215,9 +225,13 @@ img {
 }
 .home--title{
   font-size: var(--h1-font-size);
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
 }
 .home--profession{
   font-size: var(--normal-font-size);
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
   margin-bottom: var(--mb-1);
   color: rgb(20, 55, 116)
 }
@@ -269,9 +283,15 @@ margin-top: var(--mb-3);
 .profile--description{
   text-align: center;
 }
-
+.profile--content{
+  padding: 0 1rem;
+}
 /* EDUCATION */
-.education--content,.experience--content, .skills--content{
+.education--container{
+  padding: 0 1rem;
+  gap:1rem;
+}
+.education--content, .skills--content{
   display: flex;
 }
 .education--time, .experience--time{
@@ -294,7 +314,7 @@ margin-top: var(--mb-3);
   transform: translate(7px, 0);
 }
 .education--data, .experience--data{
-  gap: .5rem;
+  gap: .2rem;
 }
 .education--title, .experience--title{
   font-size: var(--h3-font-size);
@@ -302,7 +322,6 @@ margin-top: var(--mb-3);
 }
 .education--studies, .experience--company{
   font-size: var(--small-font-size);
-  color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 .experience--description{
@@ -310,6 +329,9 @@ margin-top: var(--mb-3);
 }
 
 /* SKILSS */
+.skills--content{
+  padding: 0 1rem;
+}
 .skills--content{
   grid-template-columns: repeat(2, 1fr);
 }
@@ -357,6 +379,12 @@ margin-top: var(--mb-3);
 /* experience  */
 .exp--point{
   margin-bottom: .5rem;
+}
+.experience--container{
+  gap: 1rem;
+}
+.experience--data{
+  padding: 0 1rem;
 }
 .experience--time, .education--year {
   font-size: var(--smaller-font-size);
@@ -438,7 +466,7 @@ margin-top: var(--mb-3);
   }
   .resume--left,
   .resume--right{
-    padding: 0 1.5rem
+    padding: 3rem 1.5rem
   }
   .section-title,
   .profile--description{
@@ -452,10 +480,14 @@ margin-top: var(--mb-3);
   }
   .references--container{
     grid-template-columns: repeat(2, 1fr);
+    
   }
   .languages--content{
     /* grid-template-columns: repeat(2, max-content); */
     gap: .5rem;
+  }
+  .languages--container{
+    padding: 0 1rem;
   }
   .interests--container{
     grid-template-columns: repeat(3, max-content);
@@ -533,18 +565,22 @@ body.scale-cv{
 .scale-cv .ger-page{
   display: none;
 }
+.scale-cv .bd-grid{
+  gap: .5rem;
+}
 .scale-cv .bd-container{
   max-width: 595px;
 }
-.scale-cv .section{
-  padding: 1rem 0 .80rem;
-}
+/* .scale-cv .section{
+  padding: .5rem .8rem;
+} */
 .scale-cv .section-title{
   margin-bottom: .75rem;
 }
 .scale-cv .resume--left,
 .scale-cv .resume--right{
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
+  padding: 3rem 1rem;
 }
 .scale-cv .home--img{
   width: 90px;
@@ -573,7 +609,7 @@ body.scale-cv{
 .scale-cv .education--container,
 .scale-cv .experience--container,
 .scale-cv .certificate--container{
-  gap: 1rem;
+  gap: .8rem;
 }
 
 .scale-cv .education--time,

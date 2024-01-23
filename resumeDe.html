@@ -13,28 +13,76 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- box icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <title>Bimonugroho Resume</title>
+    <title>Bram Resume</title>
   </head>
   <body class="">
     <!-- HEADER -->
     <header class="l-header" id="header">
+      <!-- <nav class="nav bd-container">
+        <a href="#" class="nav--logo">Bimo</a>
+
+        <div class="nav--menu" id="nav-menu">
+          <ul class="nav--list">
+            <li class="nav--item">
+              <a href="#home" class="nav--link active-link">
+                <i class="bx bx-home-alt-2 nav--icon"></i>Home
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#Profile" class="nav--link">
+                <i class="bx bx-user nav--icon"></i>Profile
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#Education" class="nav--link">
+                <i class="bx bx-book nav--icon"></i>Education
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#skills" class="nav--link">
+                <i class="bx bx-receipt nav--icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#Experience" class="nav--link">
+                <i class="bx bx-briefcase nav--icon"></i>Experience
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#Certificates" class="nav--link">
+                <i class="bx bx-award nav--icon"></i>Certificates
+              </a>
+            </li>
+            <li class="nav--item">
+              <a href="#References" class="nav--link">
+                <i class="bx bx-link-external nav--icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav--toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav> -->
     </header>
 
     <main class="l-main bd-container">
       <div class="resume" id="area-cv">
         <div class="resume--left">
           <!-- HOME -->
-          <section class="home" id="home">
-            <div class="home--container section bd-grid">
+          <section class="home section" id="home">
+            <div class="home--container bd-grid">
               <div class="home--data bd-grid">
-                <img src="assets/profile.jpeg" alt="" class="home--img" />
-                <h1 class="home--title">Bramantyo Bimonugroho</h1>
+                <!-- <img src="assets/profile.jpeg" alt="" class="home--img" /> -->
+                <h1 class="home--title">Anthony Bram</h1>
                 <h3 class="home--profession">Frontend Web Developer</h3>
                 <!-- button download cv saved in pdf folder-->
                 <div>
@@ -64,11 +112,18 @@
               title="Theme"
               id="theme-button"
             ></i>
+            <a href="resumeDe.html">
+              <i
+                class="ger-page"
+                title="Theme"
+                id="theme-button"
+              >🇩🇪</i>
+            </a>
             <!-- button generate pdf -->
             <i
-              class="bx bxs-download generate-pdf"
-              title="Generate PDF"
-              id="resume-button"
+                class="bx bxs-download generate-pdf"
+                title="Generate PDF"
+                id="resume-button"
             ></i>
           </section>
 
@@ -98,54 +153,14 @@
             </div>
           </section>
 
-          <!-- SKILLS -->
-          <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="certificate--container bd-grid">
-              <div class="certificate--content">
-                <h3 class="certificate--title">Programming Skills</h3>
-                <p class="certificate--description">HTML, CSS, Javascript</p>
-              </div>
-              <div class="certificate--content">
-                <h3 class="certificate--title">Libraries & Frameworks</h3>
-                <p class="certificate--description"
-                  >React, Next.js, Tailwind, Node.JS, Express</p
-                >
-              </div>
-              <div class="certificate--content">
-                <h3 class="certificate--title">Tools, Platforms & Databases</h3>
-                <p class="certificate--description"
-                  >Agile & Scrum, GitHub, Firebase, MongoDB, Netlify</p
-                >
-              </div>
-            </div>
-          </section>
-
-          <!-- LANGUAGES -->
-          <section class="languages section" id="languages">
-            <h2 class="section-title">Sprachen</h2>
-
-            <div class="languages--container">
-              <ul class="languages--content bd-grid">
-                <li class="languages--name">
-                  <span class="languages--circle"></span>Indonesisch (Native/C2)
-                </li>
-                <li class="languages--name">
-                  <span class="languages--circle"></span>Englisch (C1)
-                </li>
-                <li class="languages--name">
-                  <span class="languages--circle"></span>Deutsch (C1)
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!-- INTERESTS -->
+         
+          <!-- INTERESTS
           <section class="interests section">
-            <h2 class="section-title">Interesse</h2>
+            <h2 class="section-title">Interests</h2>
             <div class="interests--container bd-grid">
               <div class="interests--content">
                 <i class="bx bx-walk interests--icon"></i>
-                <span class="interests--name">wandern</span>
+                <span class="interests--name">hiking</span>
               </div>
               <div class="interests--content">
                 <i class="bx bx-football interests--icon"></i>
@@ -158,14 +173,15 @@
               </div>
               <div class="interests--content">
                 <i class="bx bxs-florist interests--icon"></i>
-                <span class="interests--name">gärtnern</span>
+                <span class="interests--name">gardening</span>
               </div>
               <div class="interests--content">
                 <i class="bx bx-book interests--icon"></i>
-                <span class="interests--name">lesen</span>
+                <span class="interests--name">reading</span>
               </div>
             </div>
-          </section>
+          </section> -->
+
           <section class="references section" id="references">
             <h2 class="section-title">Referenzen</h2>
             <div class="references--container">
@@ -187,169 +203,269 @@
           <section class="profile section" id="profile">
             <h2 class="section-title">Profile</h2>
 
-            <p class="profile--description"
+            <!-- <p class="profile--description"
               >Frontend-Webentwickler, der leidenschaftlich gerne kreative Ideen
               zum Leben zu erwecken und ansprechende digitale Lösungen zu
               entwickeln. Ich strebe danach Produkte zu schaffen, die nicht nur
               die Bedürfnisse der Nutzer erfüllen, sondern zu einer besseren
               Welt beitragen.</p
-            > 
-          </section>
-          <!-- EXP -->
-          <section class="experience section" id="experience">
-            <h2 class="section-title">Erfahrungen</h2>
-            <div class="experience--container bd-grid">
-              <div class="experience--content">
-                <div class="experience--time">
-                  <span class="experience--rounder"></span>
-                  <!-- <span class="experience--line"></span> -->
-                </div>
-                <div class="experience--data bd-grid">
-                  <h3 class="experience--title"
-                    >Praktika, First Level Support</h3
-                  >
-                  <p class="experience--company">
-                    FraGround Fraport Ground Handling Professionals GmbH
-                  </p>
-                  <span class="experience--time">May 2022 - Oktober 2022</span>
-                  <ul class="experience--description">
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Unterstützung der
-                      Nutzer bei Fragen und Problemen mit der IT-technischen
-                      Ausstattung
-                      </p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Integration und
-                      Betrieb von Hard- und Software für die Bereitstellung von
-                      IT-technischen, telekommunikativen Einrichtungen
-                      </p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Wartung,
-                      Aktualisierung und Upgrade der IT-technischen
-                      Einrichtungen
-                      </p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Arbeitete in einem
-                      Team, Analyse der Arbeitsabläufe des aktuellen Systems
-                      durchgeführt, konzipiert für die Umsetzung der
-                      Digitalisierung
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="experience--content">
-                <div class="experience--time">
-                  <span class="experience--rounder"></span>
-                </div>
-                <div class="experience--data bd-grid">
-                  <h3 class="experience--title">Interne Entwicklungsteam Mitglied, Integrated Web App</h3>
-                  <p class="experience--company">Indonesisches General Konsulat Frankfurt am Main</p>
-                  <span class="experience--time">2018 - 2019</span>
-                  <ul class="experience--description">
-                    <li class="exp--point">
-                      <p>
-                      <span class="languages--circle"></span>Erfassen der Benutzeranforderungen. Analyse des Datenflusses und Diskussion innerhalb des Entwicklungsteams</p>
-                    </li>
-                    <li class="exp--point">
-                      <p>
-                      <span class="languages--circle"></span>Grobes Design der Benutzeroberfläche auf Basis des analysierten Datenflusses mit Figma und Frontend-Frameworks: React und NextJs</p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Analysierte und beteiligte mit dem Design des Datenbankmodells. Techstack waren NodeJs mit Express als Backend-Server, und MongoDB/Firebase</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="experience--content">
-                <div class="experience--time">
-                  <span class="experience--rounder"></span>
-                </div>
-                <div class="experience--data bd-grid">
-                  <h3 class="experience--title">Part-time Barista</h3>
-                  <p class="experience--company"> das Lesecafe </p>
-                  <span class="experience--time">2016 - 2022</span>
-                  <ul class="experience--description">
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Customer service,
-                      Kundenbetreuung, Erbringung von Dienstleistungen, die den
-                      Anforderungen und Wünschen der Kunden entsprechen</p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Bearbeitung von
-                      Kunden Anfragen, Anliegen und Beschwerden</p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span>Vorbereitung der
-                      Produkte und Darstellung, Gewährleistung einer
-                      konsistenten Qualität
-                      </p>
-                    </li>
-                    <li class="exp--point">
-                      
-                      <p><span class="languages--circle"></span>Produktkenntnisse
-                      und Verkaufsförderung, Verbesserung des Kundenerlebnisses
-                      im Allgemeinen</p>
-                    </li>
-                    <li class="exp--point">
-                      <p><span class="languages--circle"></span> Wartung, Kontrolle
-                      des Inventars und der Lieferungen</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            > -->
+            <div class="profile--content">
+              <p class="profile--description">Frontend-Webentwickler, der leidenschaftlich gerne kreative Ideen
+              zum Leben zu erwecken und ansprechende digitale Lösungen zu
+              entwickeln. Ich strebe danach Produkte zu schaffen, die nicht nur
+              die Bedürfnisse der Nutzer erfüllen, sondern zu einer besseren
+              Welt beitragen</p>
             </div>
           </section>
 
+          
           <!-- EDUCATION -->
           <section class="education section" id="education">
             <h2 class="section-title">Ausbildung</h2>
             <div class="education--container bd-grid">
               <div class="education--content">
-                <div class="education--time">
-                  <span class="education--rounder"></span>
-                  <!-- <span class="education--line"></span> -->
-                </div>
                 <div class="education--data bd-grid">
-                  <h3 class="education--title"
-                    >Informatik (Bachelor of Science)</h3
-                  >
-                  <p class="education--studies">
-                    Frankfurt University of Applied Sciences
-                  </p>
+                  <h3 class="education--title text--blue">Frankfurt University of Applied Science, Frankfurt am Main</h3>
+                  <p>Computer Science (Bachelor of Science)</p>
                   <p class="education--year">2015-2023</p>
-                  <p>Thesis Title: Auswirkungen von Entwurfsmustern, Frameworks
+                  <p class=""
+                    >Bachelor Thesis Note: 1.0</br> Climate-Friendly Website. Thesis Title: Auswirkungen von Entwurfsmustern, Frameworks
                     und Weboptimierung auf eine nachhaltige Webseite.
-                  </p>
-                  <p
-                    >Fallstudie: Herkömmliche Webseite emittierte 50 Mal mehr
-                    Kohlenstoff-Emissionen als die Website mit Optimierung
-                    während der Entwicklung.
                   </p>
                 </div>
               </div>
               <div class="education--content">
-                <div class="education--time">
-                  <span class="education--rounder"></span>
-                </div>
                 <div class="education--data bd-grid">
-                  <h3 class="education--title"
-                    >International Advanced Diploma in Information Technology &
-                    Communication</h3
-                  >
-                  <p class="education--studies"
-                    >Institute Technology Harapan Bangsa Indonesia, affiliated
-                    with Informatics Academy Singapore</p
-                  >
+                  <h3 class="education--title text--blue">Institute Technology Harapan Bangsa Indonesia, </br> affiliated
+                    with Informatics Academy Singapore</h3>
+                  <p>International Advanced Diploma in Information Technology &
+                    Communication</p>
                   <p class="education--year">2011-2013</p>
                 </div>
               </div>
             </div>
           </section>
 
+          <!-- ------- -->
+
+
+          <!-- EXP -->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Erfahrungen</h2>
+            <div class="experience--container bd-grid">
+
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Web Developer</h3>
+                  <p class="experience--company">Freelance Blogging Platform for Journalist</p>
+                  <p class="experience--company">TechStack: HTML, CSS, JS, React, MongoDB</p>
+                  <span class="experience--time">2023 - jetzt </span>
+                  <!-- <p class="experience--description">First Level Support</p> -->
+                  <p>Ich bin derzeit mit der Entwicklung einer dynamischen und benutzerfreundlichen Blogging-Plattform beschäftigt, die auf die spezifischen Bedürfnisse meines Kunden, einer Journalistin, zugeschnitten ist. Das Ziel dieses Projekts ist es, der Journalistin einen personalisierten Raum zu bieten, in dem sie ihre Arbeit präsentieren, Einblicke teilen und mit einem breiteren Publikum in Kontakt treten kann.</p>
+                  <p>Einige der wichtigsten features: </p>
+                  <ul class="experience--description">
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Benutzerfreundliche Design-Oberfläche. Intuitiv benutzerfreundlich und einfache Navigation, so dass meine Kundin mühelos und ohne technische Probleme ihre Artikel erstellen, bearbeiten und veröffentlichen kann.React-Router V6 für routing die Anwendung.</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Authentifizierung. Ermöglicht meinem Kunden, sich bei der Anwendung anzumelden, damit sie ihre Arbeit erledigen kann. Node.Js, Express-Server zur Verwaltung der Authentifizierung der Anwendung.</p>
+                    </li>
+                     <li class="exp--point">
+                      <p><span class="languages--circle"></span>Medienvorlagen. Die Plattform enthält eine Medienintegration, die meinen Kunden dabei unterstützt, Medien zu ihren Artikeln hochzuladen.</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Responsive Design. Die Plattform ist so konzipiert, dass sie responsiv ist, so dass die Benutzer über verschiedene Geräte auf die Website zugreifen können und eine nahtlose Erfahrung und Funktionalität erhalten.</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Speichern von Inhalten. Die Verwendung eines Datenbankmodells, in diesem Fall einer NoSQL-Datenbank wie MongoDB, ermöglicht es meiner Kundin, ihre Arbeit zu speichern und zu veröffentlichen.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Web Developer</h3>
+                  <p class="experience--company">Freelance Centralized Shopping Cart Web Application for das Lesecafe</p>
+                  <p class="experience--company">TechStack: HTML, CSS, JS, Firebase</p>
+                  <span class="experience--time spacing-l">2023 - 2023</span>
+                  <p>Dieses Projekt wurde mit dem Ziel entwickelt, Teams eine einheitliche Plattform für die Verwaltung und den nahtlosen Zugriff auf Einkaufsanforderungen zu bieten. Ich habe eine Webanwendung entwickelt, die auch als mobile Anwendung genutzt werden kann.</p>
+                  <p>Einige der wichtigsten features: </p>
+                  <ul class="experience--description">
+                    <li class="exp--point ">
+                      <p><span class="languages--circle"></span>Benutzerfreundliches Design der Schnittstelle. Intuitiv benutzerfreundlich und einfache Navigation, die es den Mitgliedern leicht macht, das System zu nutzen, zu navigieren und mit ihm zu interagieren. Mit Hilfe eines Formulars können Artikel in den Warenkorb gelegt werden und mit einem Klick oder einer Berührung können hinzugefügte Artikel wieder entfernt werden, wenn sie nicht mehr benötigt werden.</p>
+                    </li>
+                     <li class="exp--point">
+                      <p><span class="languages--circle"></span>Synchronisierung in Echtzeit. Um die Einkaufskarte synchron zu halten, nutzt diese Funktion die Technologie wie Google Firebase, die eine Echtzeit-Datenbank bietet.</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Cross-platform Zugänglichkeit. Die Plattform ist so konzipiert, dass sie flexibel ist, so dass die Nutzer über verschiedene Geräte auf die Online-Anwendung zugreifen können und ihre Funktionalität nahtlos beibehalten wird.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Praktikum, First Level Support</h3>
+                  <p class="experience--company">FraGround Fraport Ground Handling Professionals GmbH</p>
+                  <span class="experience--time">May 2022 - October 2022</span>
+                  <!-- <p class="experience--description">First Level Support</p> -->
+                  <p>Im letzten Jahr meines Studiums habe ich ein sechsmonatiges Praktikum am Frankfurter Flughafen absolviert, um meine Anforderungen an ein Hochschulpraktikum zu erfüllen. Als Mitglied der IT-Abteilung sammelte ich praktische Erfahrungen im Umgang mit wichtigen Aufgaben und wandte kritisches Denken an, um Probleme anzugehen und zu lösen.</p>
+                  <p>Während des Praktikums konnte ich an einem laufenden Projekt arbeiten: Digitalisierung des Recruitingprozesses. In diesem Projekt konnte ich der IT-Abteilung Erkenntnisse über Benutzeranforderungen, Datenfluss und Designprinzipien liefern, die die Entwicklung des Endprodukts unterstützen.</p>
+                  <ul class="experience--description">
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Integration und
+                      Betrieb von Hard- und Software für die Bereitstellung von
+                      IT-technischen, telekommunikativen Einrichtungen</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Wartung,
+                      Aktualisierung und Aufrüstung der IT-technischen Einrichtungen</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Arbeitete in einem Team,
+                      analysierte den Arbeitsablauf des aktuellen Systems durchgeführt,
+                      konzipiert für die Umsetzung der Digitalisierung.
+                      </p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Umsetzung des Projektziels in einer Scrum-basierten Umgebung. Dokumentation von Aufgaben, Problemen und Funktionen mit Hilfe der Software ManageEngine, ähnlich wie Jira, oder Asana</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Mitglied des Entwicklerteams</h3>
+                  <p class="experience--company">Indonesisches Generalkonsulat in Frankfurt am Main</p>
+                  <p class="experience--company">TechStack: NodeJS, Express, MongoDB, Firebase, React and Next.JS</p>
+                  <span class="experience--time">2018 - 2019</span>
+                  <p>Das Projekt war die Entwicklung einer integrierten Web-App. Diese Web-App wurde intern verwendet, um Benutzerinformationen zu verwalten und den Überblick über die Projekte und Aufgaben der Benutzer zu behalten. </p>
+                  <p>Während dieser Zeit konnte ich unter anderem an folgenden Aufgaben arbeiten:</p>
+                  <ul class="experience--description">
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Analytisch gesammelte Benutzeranforderungen in einen Datenfluss umwandeln und in der Lage sein, diese dem Team Meeting zur Verfügung zu stellen.</p>
+                    </li>
+                    <li class="exp--point spacing-m">
+                      <p><span class="languages--circle"></span>Grobes Zeichnen und Entwerfen der Benutzeroberfläche auf Basis des analysierten Datenflusses mit Excalidraw, Figma und Frontend-Frameworks: React und NextJs.</p>
+                    </li>
+                    <li class="exp--point ">
+                      <p><span class="languages--circle"></span>Code-Reviews von anderen Teammitgliedern sowie die Arbeit in einer agilen und Scrum-Umgebung.</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Analysierte und beteiligte sich an der Gestaltung des Datenbankmodells. Techstack waren NodeJs mit Express als Backend-Server, und MongoDB später aufgestockt mit Google Firebase</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Backend Developer</h3>
+                  <p class="experience--company">Project an der Universität</p>
+                  <p class="experience--company">TechStack: NodeJS, Express, InfluxDB</p>
+                  <span class="experience--time">2021</span>
+                  <p>Während meines Studiums an der Frankfurt University of Applied Sciences habe ich an einem Fallstudienprogramm teilgenommen. Das Thema der Fallstudie war die Entwicklung einer Wetterstation unter Verwendung von Technologien wie MicroController Zigbee, RaspberryPi und einigen Sensoren. </p>
+                  <p >Im Team war ich für die Erstellung eines Backend-Servers und einer API verantwortlich. Diese API konnte später von dem Frontend, das ebenfalls von unserem Team entwickelt wurde, genutzt werden.</p>
+                  <p>Die Wetterstation erfasst Daten in Form von Messungen der Luftverhältnisse wie z.B Temperatur, Feuchtigkeit, CO2, Druck usw.</p>
+                  <p>Am Ende des Projekts hat das Team eine weniger sperrige Wetterstation entwickelt, die in der Lage ist, Messdaten in Echtzeit zu erfassen und ein Dashboard mit einer grafischen Benutzeroberfläche für die Daten anzuzeigen.</p>
+                  <ul class="experience--description">
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Erfassen der Benutzeranforderungen. Analyse des Datenflusses und Diskussion innerhalb des Entwicklungsteams</p>
+                    </li>
+                    <li class="exp--point">
+                      <p><span class="languages--circle"></span>Entwickelt API mit Node.js und Express-Server und Datenbank mit InfluxDB. Die Datenbank nahm Echtzeit-Messungen, die von den Sensoren erfasst wurde.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="experience--content">
+                <div class="experience--data bd-grid">
+                  <h3 class="experience--title text--blue">Part-time Barista</h3>
+                  <p class="experience--company"> das Lesecafe </p>
+                  <span class="experience--time">2016 - 2022</span>
+                  <ul class="experience--description">
+                    <li class="exp--point">
+                      <p>
+                      <span class="languages--circle"></span>Kundenbetreuung,
+                      Dienstleistungen, die den Anforderungen und Wünschen der
+                      Kundenwünschen entsprechen und die Verbesserung des Kundenerlebnisses
+                      Erfahrung im Allgemeinen</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+           <!-- SKILLS -->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills--content">
+              <div class="certificate--container bd-grid">
+              <div class="certificate--content">
+                <h3 class="certificate--title text--blue">Programming Skills</h3>
+                <p class="certificate--description">HTML, CSS, Javascript</p>
+              </div>
+              <div class="certificate--content">
+                <h3 class="certificate--title text--blue">Libraries & Frameworks</h3>
+                <p class="certificate--description"
+                  >React, Next.js, Tailwind, Node.JS, Express</p
+                >
+              </div>
+              <div class="certificate--content">
+                <h3 class="certificate--title text--blue">Tools, Platforms & Databases</h3>
+                <p class="certificate--description"
+                  >Agile & Scrum, GitHub, InfluxDB, Firebase, MongoDB, Netlify, ManageEngine, Microsoft ActiveDirectory</p
+                >
+              </div>
+            </div>
+            </div>
+            
+          </section>
+
+          <!-- LANGUAGES -->
+          <section class="languages section spacing-l" id="languages">
+            <h2 class="section-title">sprachen</h2>
+
+            <div class="languages--container">
+              <ul class="languages--content bd-grid">
+                <li class="languages--name">
+                  Indonesian (Native/C2)
+                </li>
+                <li class="languages--name">
+                  English (C1)
+                </li>
+                <li class="languages--name">
+                  German (C1)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="education section" id="education">
+            <h2 class="section-title ">Zertifikat</h2>
+            <div class="education--container bd-grid">
+              <div class="education--content">
+                <div class="education--data bd-grid">
+                  <h3 class="education--title text--blue"
+                    >The Frontend Developer Career Path</h3
+                  >
+                  <p class="education--year">Scrimba</p>
+                  <p class="education--year">2023 Certificate URL: https://scrimba.com/certificate/uGx7EVta/gfrontend</p>
+                  <p>Über 70 Stunden Tutorials, Hunderte von Programmierherausforderungen und ein Dutzend Nebenprojekte.
+                  </p>
+                  <p>Skills: HTML, CSS, JavaScript, Responsive Website, Web Architecture, Web Design, APIs, React, Firebase, Git, Code Reviews.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
         </div>
       </div>
     </main>
@@ -363,3 +479,4 @@
     <script src="main.js"></script>
   </body>
 </html>
+
